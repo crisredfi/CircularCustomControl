@@ -15,6 +15,9 @@
 		F07560D5213A941B007AFACE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F07560D4213A941B007AFACE /* main.m */; };
 		F07560DF213A941B007AFACE /* customControlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07560DE213A941B007AFACE /* customControlTests.m */; };
 		F07560EA213A941B007AFACE /* customControlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F07560E9213A941B007AFACE /* customControlUITests.m */; };
+		F07560FC213AAC23007AFACE /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F07560FB213AAC23007AFACE /* LoadingView.m */; };
+		F07560FE213AAF7D007AFACE /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F07560FD213AAF7D007AFACE /* LoadingView.xib */; };
+		F0EE0C21213AB6300073EB82 /* BorderLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EE0C20213AB6300073EB82 /* BorderLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		F07560E5213A941B007AFACE /* customControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = customControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F07560E9213A941B007AFACE /* customControlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = customControlUITests.m; sourceTree = "<group>"; };
 		F07560EB213A941B007AFACE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F07560FA213AAC23007AFACE /* LoadingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingView.h; sourceTree = "<group>"; };
+		F07560FB213AAC23007AFACE /* LoadingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingView.m; sourceTree = "<group>"; };
+		F07560FD213AAF7D007AFACE /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		F0EE0C1F213AB6300073EB82 /* BorderLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BorderLayer.h; sourceTree = "<group>"; };
+		F0EE0C20213AB6300073EB82 /* BorderLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BorderLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +109,7 @@
 		F07560C4213A9419007AFACE /* customControl */ = {
 			isa = PBXGroup;
 			children = (
+				F0EE0C22213AB6350073EB82 /* LoadingView */,
 				F07560C5213A9419007AFACE /* AppDelegate.h */,
 				F07560C6213A9419007AFACE /* AppDelegate.m */,
 				F07560C8213A9419007AFACE /* ViewController.h */,
@@ -130,6 +139,18 @@
 				F07560EB213A941B007AFACE /* Info.plist */,
 			);
 			path = customControlUITests;
+			sourceTree = "<group>";
+		};
+		F0EE0C22213AB6350073EB82 /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				F07560FA213AAC23007AFACE /* LoadingView.h */,
+				F07560FB213AAC23007AFACE /* LoadingView.m */,
+				F07560FD213AAF7D007AFACE /* LoadingView.xib */,
+				F0EE0C1F213AB6300073EB82 /* BorderLayer.h */,
+				F0EE0C20213AB6300073EB82 /* BorderLayer.m */,
+			);
+			path = LoadingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F07560D2213A941B007AFACE /* LaunchScreen.storyboard in Resources */,
+				F07560FE213AAF7D007AFACE /* LoadingView.xib in Resources */,
 				F07560CF213A941B007AFACE /* Assets.xcassets in Resources */,
 				F07560CD213A9419007AFACE /* Main.storyboard in Resources */,
 			);
@@ -262,7 +284,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0EE0C21213AB6300073EB82 /* BorderLayer.m in Sources */,
 				F07560CA213A9419007AFACE /* ViewController.m in Sources */,
+				F07560FC213AAC23007AFACE /* LoadingView.m in Sources */,
 				F07560D5213A941B007AFACE /* main.m in Sources */,
 				F07560C7213A9419007AFACE /* AppDelegate.m in Sources */,
 			);
